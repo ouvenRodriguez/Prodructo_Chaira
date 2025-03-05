@@ -108,6 +108,9 @@ header {
 #barra {
   grid-area: barra;
   background-color: brown;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: hidden;
 }
 
 #footer {
@@ -262,26 +265,34 @@ h3 {
   height: 20px;
 }
 
+.text-barra{
+  margin: 0;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  color: white;
+}
+
 #button-Group {
   display: flex;
   justify-content: right;
   padding: 10px;
 }
 
-.barra-Noticia {
-  width: 100%;
+#barra-Noticia {
   height: 100%;
   display: flex;
-  align-items: start;
+  flex-wrap: nowrap;
   justify-content: left;
   align-items: center;
-  gap: 10px;
+  gap: 5px;
+  padding-right: 10px;
   padding-left: 10px;
   background-color: brown;
 }
 
 .tamaño-img-Barra {
-  width: 21px;
+  width: 16px;
   height: 57%;
 }
 
